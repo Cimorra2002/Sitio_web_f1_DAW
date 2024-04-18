@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css para estilos en bootstrap -->
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="icon" href="../images/F1logo.svg">
+    <title>F1nfo</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="bg-dark d-flex text-center justify-content-center">
+      <a href="../index.html" class="text-decoration-none"><h1>F1NFO</h1></a>
+      <a href="../index.html"><img src="../images/losenlaces.png" alt="losEnlaces"></a>
+    </header>
+
+    <!-- Menu Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../images/F1logo.svg" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
+            <span class="align-middle">F1nfo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../css-pags/temporadas.html" class="nav-link">Temporadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../css-pags/historia.html" class="nav-link">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rankings.html" class="nav-link">Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../css-pags/sobreNosotros.html" class="nav-link">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactanos.html" class="nav-link">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin barra de navegacion -->
+
+    <!-- Contenido pagina -->
+    <div class="container main-content mt-4 justify-content-center mb-4">
+        <!-- Titulo pagina -->
+        <h1 class="pt-4">Rankings</h1>
+
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb d-none d-sm-flex">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item" aria-current="page">Rankings</li>
+          </ol>
+        </div>
+
+
+        <!--Creo un div el cual contiene en la clase una alerta y le indico que esta sea secundaria indico con el alert-dismissible que se pueda cerrar la alerta y hago una animación al cerrarla con fade show y indico que no se muestre mediante d-sm-block en moviles-->
+        <div class="alert alert-secondary alert-dismissible fade show d-none d-sm-block" role="alert">
+         En este apartado encontraras diferentes rankings
+         <!--Creo un boton el cual le indico que se use para cerrar la alerta-->
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <!--Creo un div el cual contiene en la clase una alerta y le indico que esta sea secundaria indico con el alert-dismissible que se pueda cerrar la alerta y hago una animación al cerrarla con fade show y indico que no se muestre mediante d-sm-block en moviles-->
+        <div class="alert alert-warning alert-dismissible fade show d-block d-sm-none" role="alert">
+          Las tablas de los rankings no se encuentra disponible en los dispositivos moviles
+         <!--Creo un boton el cual le indico que se use para cerrar la alerta-->
+           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+         </div>
+
+
+
+
+
+        <!-- Escibir codigo pagina aqui -->
+
+         <!--Creo una tabla a la cual le asigno la clase de tabla con color negro y le indico que la tabla tenga hover de manera que cuand se pase el ratón por ella esta se ponga un poco más clara que las demas, le indico que tenga un margen con la parte de arriba de 4, le indico con el display que no se muestre solamente en el size sm, es decir en la parte de móviles, le aplico un padding de 4 y alineo todos los items al centro-->
+      <table class="table table-dark table-dark table table-hover mt-4 d-none d-sm-block p-4 align-items-center">
+        <legend class="mt-4 d-none d-sm-block">Pilotos más laureados</legend>
+        <tr>
+          <th scope="col">Pilotos</th>
+          <th scope="col">Mundiales</th>
+          <th scope="col">Nacionalidad</th>
+          <th scope="col">Victorias</th>
+        </tr>
+
+        <tr>
+          <td scope="row">Michael Schumacher</td>
+          <td scope="row">7</td>
+          <td>Alemania</td>
+          <td>91</td>
+        </tr>
+
+        <tr>
+          <td>Lewis Hamilton</td>
+          <td>7</td>
+          <td>Reino Unido</td>
+          <td>103</td>
+        </tr>
+
+        <tr>
+          <td>Juan Manuel Fangio</td>
+          <td>5</td>
+          <td>Argentina</td>
+          <td>24</td>
+        </tr>
+
+        <tr>
+          <td>Alain Prost</td>
+          <td>4</td>
+          <td>Francia</td>
+          <td>51</td>
+        </tr>
+
+        <tr>
+          <td>Sebastian Vettel</td>
+          <td>4</td>
+          <td>Francia</td>
+          <td>53</td>
+        </tr>
+
+        <tr>
+          <td>Jack Brabman</td>
+          <td>3</td>
+          <td>Austria</td>
+          <td>25</td>
+        </tr>
+
+        <tr>
+          <td>Nelson Piquet</td>
+          <td>3</td>
+          <td>Brasil</td>
+          <td>23</td>
+        </tr>
+
+        <tr>
+          <td>Ayrton Senna</td>
+          <td>3</td>
+          <td>Brasil</td>
+          <td>41</td>
+        </tr>
+      </table>
+
+          <!--Creo una tabla a la cual le asigno la clase de tabla con color negro y le indico que la tabla tenga hover de manera que cuand se pase el ratón por ella esta se ponga un poco más clara que las demas, le indico que tenga un margen con la parte de arriba de 4, le indico con el display que no se muestre solamente en el size sm, es decir en la parte de móviles, le aplico un padding de 4 y alineo todos los items al centro-->
+      <table class="table table-dark table-dark table table-hover mt-4 d-none d-sm-block p-4">
+        <legend class="d-none d-sm-block">Pilotos con maas podiums</legend>
+
+        <tr>
+          <th scope="col">Piloto</th>
+          <th scope="col">Podiums</th>
+          <th scope="col">Ratio podio por carrera</th>
+        </tr>
+
+        <tr>
+          <td scope="row">Lewis Hamilton</td>
+          <td>197</td>
+          <td>59.34</td>
+        </tr>
+
+        <tr>
+          <td>Michael Schumacher</td>
+          <td>155</td>
+          <td>50.49</td>
+        </tr>
+
+        <tr>
+          <td>Sebastian Vettel</td>
+          <td>122</td>
+          <td>40.80</td>
+        </tr>
+
+        <tr>
+          <td>Alain Prost</td>
+          <td>106</td>
+          <td>53.27</td>
+        </tr>
+
+        <tr>
+          <td>Fernando Alonso</td>
+          <td>106</td>
+          <td>28.04</td>
+        </tr>
+
+        <tr>
+          <td>Kimi Raikkonen</td>
+          <td>103</td>
+          <td>29.43</td>
+        </tr>
+
+        <tr>
+          <td>Max Verstappen</td>
+          <td>98</td>
+          <td>52.97</td>
+        </tr>
+
+        <tr>
+          <td>Ayrton Senna</td>
+          <td>80</td>
+          <td>49.69</td>
+        </tr>
+
+        <tr>
+          <td>Ruben Barrichelo</td>
+          <td>68</td>
+          <td>21.05</td>
+        </tr>
+
+      </table>
+
+          <!--Creo una tabla a la cual le asigno la clase de tabla con color negro y le indico que la tabla tenga hover de manera que cuand se pase el ratón por ella esta se ponga un poco más clara que las demas, le indico que tenga un margen con la parte de arriba de 4, le indico con el display que no se muestre solamente en el size sm, es decir en la parte de móviles, le aplico un padding de 4 y alineo todos los items al centro-->
+      <table class="table table-dark table-dark table table-hover mt-4 d-none d-sm-block p-4">
+
+        <legend class="d-none d-sm-block">Pilotos con mas puntos</legend>
+
+        <tr>
+          <th scope="col">Piloto</th>
+          <th scope="col">Puntos</th>
+          <th scope="col">Puntos por carrera</th>
+        </tr>
+
+        <tr class="table-active">
+          <td scope="row">Lewis Hamilton</td>
+          <td>4.639</td>
+          <td>13.97</td>
+        </tr>
+
+        <tr>
+          <td>Sebastian Vettel</td>
+          <td>3.098</td>
+          <td>10.36</td>
+        </tr>
+
+        <tr>
+          <td>Max Verstappen</td>
+          <td>2.568</td>
+          <td>13.98</td>
+        </tr>
+
+        <tr>
+          <td>Fernando Alonso</td>
+          <td>2.267</td>
+          <td>6</td>
+        </tr>
+
+        <tr>
+          <td>Kimii Raikkonen</td>
+          <td>1873</td>
+          <td>5.36</td>
+        </tr>
+
+        <tr>
+          <td>Valtteri Bottas</td>
+          <td>1.797</td>
+          <td>8.09</td>
+        </tr>
+
+        <tr>
+          <td>Nico Rosberg</td>
+          <td>1.594</td>
+          <td>7.74</td>
+        </tr>
+
+        <tr>
+          <td>Michael Schumacher</td>
+          <td>1.566</td>
+          <td>5.10</td>
+        </tr>
+
+        <tr>
+          <td>Sergio Perez</td>
+          <td>1.468</td>
+          <td>5.10</td>
+        </tr>
+      </table>
+
+        <!--Creo una tabla a la cual le asigno la clase de tabla con color negro y le indico que la tabla tenga hover de manera que cuand se pase el ratón por ella esta se ponga un poco más clara que las demas, le indico que tenga un margen con la parte de arriba de 4, le indico con el display que no se muestre solamente en el size sm, es decir en la parte de móviles, le aplico un padding de 4 y alineo todos los items al centro-->
+
+      <table class="table table-dark table-dark table table-hover mt-4 d-none d-sm-block p-4">
+        <legend class="d-none d-sm-block">Vueltas Rapidas</legend>
+
+        <tr>
+          <th scope="col">Piloto</th>
+          <th scope="col">Vueltas</th>
+          <th scope="col">Porcentaje</th>
+        </tr>
+
+        <tr>
+          <td scope="row">Michael Schumacher</td>
+          <td>77</td>
+          <td>25.08</td>
+        </tr>
+
+        <tr>
+          <td>Lewis Hamilton</td>
+          <td>65</td>
+          <td>19.58</td>
+        </tr>
+
+        <tr>
+          <td>Kimi Raikkonen</td>
+          <td>46</td>
+          <td>13.14</td>
+        </tr>
+
+        <tr>
+          <td>Alain Prost</td>
+          <td>41</td>
+          <td>20.60</td>
+        </tr>
+
+        <tr>
+          <td>Sebastian Vettel</td>
+          <td>38</td>
+          <td>12.71</td>
+        </tr>
+
+        <tr>
+          <td>Nigel Mansell</td>
+          <td>30</td>
+          <td>16.04</td>
+        </tr>
+
+        <tr>
+          <td>Max Verstappen</td>
+          <td>30</td>
+          <td>16.22</td>
+        </tr>
+
+        <tr>
+          <td>Jim Clarck</td>
+          <td>28</td>
+          <td>38.98</td>
+        </tr>
+
+        <tr>
+          <td>Mika Hakkinnen</td>
+          <td>25</td>
+          <td>15.53</td>
+        </tr>
+
+      </table>
+
+
+      <div class="page-header">
+				<h1>Galería de arte</h1>
+				<h2>Los mejores pilotos de la historia de la f1</h2>
+			</div>
+			<div class="container-fluid text-center">
+				<div class="row">
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/fernando_alonso_mundial.jpg" alt="FernandoAlonso" class="img-fluid imagen">
+						<h3>Fernando Alonso</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/michael_schumacher_mundial.jpg" alt="Michael Schumacher" class="img-fluid imagen">
+						<h3>Michael Schumacher</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/kimi_raikonen_mundial.jpg" alt="Kimi Raikkonen" class="img-fluid imagen">
+						<h3>Kimi Raikkonen</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/alain_prost_mundial.jpg" alt="Alain Prost" class="img-fluid imagen">
+						<h3>Alain Prost</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/sebastian_vettel_mundial.jpg" alt="Sebastian Vettel" class="img-fluid imagen">
+						<h3>Sebastian Vettel</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/jack_brabham_mundial.jpg" alt="Jack Brabham" class="img-fluid imagen">
+						<h3>Jack Brabham</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/nelson_piquet_mundial.jpg" alt="Nelson Piquet" class="img-fluid imagen">
+						<h3>Nelson Piquet</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/ayrton_senna_mundial.jpg" alt="Ayrton Senna" class="img-fluid imagen">
+						<h3>Ayrton Senna</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/fangio_mundial.jpg" alt="Juan Manuel Fangio" class="img-fluid imagen">
+						<h3>Juan Manuel Fangio</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/checo_perez.jpg" alt="Checo Perez" class="img-fluid imagen">
+						<h3>Checo Perez</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/lewis_hamilton_mundial.jpg" alt="Lewis Hamilton" class="img-fluid imagen">
+						<h3>Lewis Hamilton</h3>
+					</div>
+					<div class="col col-lg-3 col-md-4 col-sm-6 col-12"><img src="../images/verstappen_mundial.jpg" alt="Max Verstappen" class="img-fluid imagen">
+						<h3>Max Verstappen</h3>
+					</div>
+				</div>
+			</div>
+
+
+    </div>
+
+    <!-- Fin contenido pagina -->
+
+
+    <!-- Pie de página -->
+    <div class="footer mt-auto py-3 bg-dark d-flex align-items-center">
+        <div class="container">
+            <!-- Cambiar segun la pagina "bootstrap" o "css" -->
+          <p class="text-white m-0">Bootstrap --- Grupo 1 </p>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white">
+            © 2024 Copyright:
+            <a class="text-secondary" href="https://www.formula1.com/" target="_blank">Formula1.com</a>
+          </div>
+    </div>
+
+    <!-- Bootstrapjs -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

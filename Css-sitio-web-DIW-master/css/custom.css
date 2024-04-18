@@ -1,0 +1,20 @@
+/* Estilos css para el header de bootstrap */
+header a{
+    text-decoration: none;
+    color: #9b9d9e;
+}
+
+header img{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 45px;
+
+}
+
+@media (max-width: 991px) {
+    /* Imagen del header */
+      header img{
+        width: 30px;
+      }
+}

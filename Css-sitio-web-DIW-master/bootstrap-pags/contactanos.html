@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css para estilos en bootstrap -->
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="icon" href="../images/F1logo.svg">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>F1nfo</title>
+</head>
+<body>
+
+  <!--Header-->
+  <header class="bg-dark d-flex text-center justify-content-center">
+    <a href="../index.html" class="text-decoration-none"><h1>F1NFO</h1></a>
+    <a href="../index.html"><img src="../images/losenlaces.png" alt="losEnlaces"></a>
+  </header>
+
+
+    <!-- Menu Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../images/F1logo.svg" alt="Logo" width="100" height="40" class="d-inline-block align-text-top">
+            <span class="align-middle">F1nfo</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS" aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="../css-pags/temporadas.html" class="nav-link">Temporadas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../css-pags/historia.html" class="nav-link">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="rankings.html" class="nav-link">Rankings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../css-pags/sobreNosotros.html" class="nav-link">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactanos.html" class="nav-link">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin barra de navegacion -->
+
+    <!-- Contenido pagina -->
+    <div class="container main-content mt-4 mb-4">
+        <!-- Titulo pagina -->
+        <h1 class="pt-4">Contactanos</h1>
+
+        <div aria-label="breadcrumb">
+          <ol class="breadcrumb breadcrumb d-none d-sm-flex">
+            <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+            <li class="breadcrumb-item" aria-current="page">Contactanos</li>
+          </ol>
+        </div>
+
+        <!-- Escibir codigo pagina aqui -->
+
+      <div class="alert alert-primary fade show d-none d-sm-block">
+        En este apartado encontraras un formulario para contactar con nosotros y no aparece en moviles
+      </div>
+
+      <div class="alert alert-danger fade show d-block d-sm-none" role="alert">
+        Este apartado encontraras un formulario para contactar con nosotros y solo aparecen en moviles
+      </div>
+
+       <!--Creo un div el cual contiene los valores de display flex para ajustar el contenido que tenga dentro, además le indico que el contenido y texto que este contenga este centrado y le pongo un padding de 5 sobre toda la página web-->
+      <div class="display:flex; aling-items:center; justify-content:center; p-5">
+      <!--Creo un formulario al cual le indico que tenga un borde de color negro y este este este redondeado-->
+        <form class="border border-dark rounded-3">
+      <!--Crep una etiqueta leyenda en la cual indico el nombre del formulario y le indico que el texto tiene que estar centrado con un padding de 2-->
+          <legend class="text-center p-2">Contactanos</legend>
+      <!--Creo un div el cual contiene un parrafo con ifnormación para el usuario acerca de la utilidad de este formulario y le indico que sea form-group lo cual me permite que que todo lo que añada despues de este se muestre abajo de el con un padding de 2 y un margen button de 2 ademas de indicarle la distancia que debe de tener con los bordes del formulario-->
+          <div class="form-group mx-sm-5 mb-2 p-2">
+            <p>Si tienes alguna duda sobre la página web o alguna recomendación para mejorar la página contactanos</p>
+          </div>
+      <!--Creo un div el cual contiene un input llamado correo con el valor correo electronico para que el usuario sepa que debe rellenar en ese campo y que sea de tipo email y  y le indico que sea form-control para tener el control acerca de ese campo y en el div indico que debe de tener un form-group lo cual me permite que que todo lo que añada despues de este se muestre abajo de el con un padding de 2 y un margen button de 2 ademas de indicarle la distancia que debe de tener con los bordes del formulario-->
+          <div class="form-group mx-sm-5 mb-2 p-2">
+            <input type="email" placeholder="Correo Electrónico" class="form-control">
+          </div>
+        <!--Creo un div el cual contiene un input el cual contiene el nombre indicado en valor para que el usuario sepa que rellenar y le indico que sea form control de manera que tenga el control de ese campo y le indico que sea form-group lo cual me permite que que todo lo que añada despues de este se muestre abajo de el con un padding de 2 y un margen button de 2 ademas de indicarle la distancia que debe de tener con los bordes del formulario-->
+          <div class="form-group mx-sm-5 mb-2 p-2">
+              <input type="text" placeholder="Nombre" class="form-control">
+          </div>
+          <!--Creo un div el cual contiene un input el cual contiene el apellido indicado en valor para que el usuario sepa que rellenar y le indico que sea form control de manera que tenga el control de ese campo y le indico que sea form-group lo cual me permite que que todo lo que añada despues de este se muestre abajo de el con un padding de 2 y un margen button de 2 ademas de indicarle la distancia que debe de tener con los bordes del formulario-->
+          <div class="form-group mx-sm-5 mb-2 p-2">
+            <input type="text" placeholder="apellidos" class="form-control">
+          </div>
+            <!--Creo un div el cual contiene un input el cual contiene el telefono indicado en valor para que el usuario sepa que rellenar y le indico que sea form control de manera que tenga el control de ese campo y le indico que sea form-group lo cual me permite que que todo lo que añada despues de este se muestre abajo de el con un padding de 2 y un margen button de 2 ademas de indicarle la distancia que debe de tener con los bordes del formulario-->
+          <div class="form-group mx-sm-5 mb-2 p-2">
+            <input type="tel" name="telefono" placeholder="telefono" class="form-control">
+          </div>
+            <!--Creo un div el cual contiene un textarea y un label el cual le proporciona al usuario la informacion necesaria para saber que debe de rellenar dentro de este campo y le indico que sea form control de manera que tenga el control de ese campo y le indico que sea form-group lo cual me permite que que todo lo que añada despues de este se muestre abajo de el con un padding de 2 y un margen button de 2 ademas de indicarle la distancia que debe de tener con los bordes del formulario-->
+          <div class="form-group mx-sm-5 mb-2 p-2">
+            <textarea placeholder="¿Que te a parecido la página" class="form-control"></textarea>
+          </div>
+
+        <!--Creo un buttom de tipo submit para que el usuario pueda enviar el formulario y le asigno la clase buton con el color primario y una separacion de los bordes del formulario de 5 ademas de un margen inferior de 3 y un padding de 2-->
+          <button type="button" class="btn btn-primary mx-sm-5 mb-3 p-2" data-toggle="modal" data-target="#exampleModalCenter">
+            Enviar
+          </button>
+
+          <!--Creo un div de tipo modal el cual tiene un animación y le añado dos botones los cuales aparecen junto a un texto al clickar sobre el boton primario y estos sirven para cerrar la ventana modal-->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Formulario Enviado</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!--Añado un div el cual le asigno la clase de alerta con el colo verde que lo indico con alert-success-->
+                  <div class="alert alert-success">
+                    Una vez enviado solamente revisa tu correo electrónico para ver nuestra respuesta
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Aceptar</button>
+                  <button type="button" class="btn btn-outline-success" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </form>
+      </div>
+
+
+      <div class="d-inline-block">
+
+        <div class="card text-center" style="width: 18rem;">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Proyecto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/CarlosOlivaAznar/Css-sitio-web-DIW">Enlace github</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card-body mb-4 mt-4" style="width: 18rem;">
+            <img src="../images/f1-1945.png" class="max-width:10px;" style="width: 15rem;">
+            <h5 class="card-title">Página Web F1</h5>
+            <p class="card-text">Si eres programador y quieres ayudar con el desarrollo de la página web aqui tiene el enlace a github</p>
+          </div>
+        </div>
+      <div class="card mb-4 mt-4" style="width: 300px;">
+        <img class="card-img-top max-width:10px;" src="../images/saul.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Saul Benede Soler</h5>
+          <p class="card-text">Si quieres contactar directamente con uno de los desarrolladores de está página web pincha en el enlace</p>
+          <a href="https://github.com/SaulBenedeSoler" class="btn btn-primary">Git Hub Saúl Benedé</a>
+        </div>
+      </div>
+
+
+      <div class="card mb-3">
+        <img class="img-thumbnail" src="../images/carlos.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="https://github.com/CarlosOlivaAznar">Carlos Oliva</a></h5>
+          <p class="card-text">Este es otro de los integrantes del grupo presiona su nombre para ir a su github y contactar con el.</p>
+        </div>
+      </div>
+
+
+      <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Diego Cimorra</div>
+        <div class="card-body text-primary">
+          <a href="https://github.com/Cimorra2002"><img src="../images/diego.jpg" class="img-thumbnail" alt="diego"></a>
+          <h5 class="card-title">Diego Cimorra</h5>
+          <p class="card-text">Para contactar con el tercer integrante de esta página web debes de hacer click en la foto</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+    <!-- Fin contenido pagina -->
+
+
+    <!-- Pie de página -->
+    <div class="footer mt-auto py-3 bg-dark d-flex align-items-center">
+        <div class="container">
+            <!-- Cambiar segun la pagina "bootstrap" o "css" -->
+          <p class="text-white m-0">Bootstrap --- Grupo 1 </p>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3 text-white">
+            © 2024 Copyright:
+            <a class="text-secondary" href="https://www.formula1.com/" target="_blank">Formula1.com</a>
+          </div>
+    </div>
+
+    <!-- Bootstrapjs -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

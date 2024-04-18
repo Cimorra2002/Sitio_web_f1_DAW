@@ -1,0 +1,539 @@
+/* Estilos generales pagina */
+html{
+  /* Funcion para la vista historia */
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* header */
+header{
+  height: 50px;
+  background-color: #212529;
+}
+
+header a{
+  text-decoration: none;
+}
+
+header h1{
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: 400;
+  color: #9b9d9e;
+}
+
+header img{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 45px;
+  
+}
+
+/* Estilos barra de navegacion */
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  gap: 40px;
+  background-color: #212529;
+  color: #9b9d9e;
+  height: 68px;
+  padding: 0 25px;
+  z-index: 3;
+}
+
+/* La imagen y texto del header la hemos metido dentro del navbar para que quede mas */
+/* estetico y no quede tan sobrecargado */
+nav .imagen-logo{
+    display: flex;
+    vertical-align: middle;
+}
+
+nav .imagen-logo img{
+    height: 1.5em;
+}
+
+nav .imagen-logo h3{
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-left: 5px;
+    color: white;
+    font-weight: 200;
+}
+
+.lista {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista li {
+  margin: 0 0.5rem;
+  overflow: hidden;
+}
+
+.lista li a{
+    color: #9b9d9e;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.lista li a:hover{
+    color: #c7c6c4;
+    transition: 0.3s;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
+/* Boton del navbar */
+/* Son 3 lineas que se alinean horizontalmente para dar la sensacion de un boton de hamburger */
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #9b9d9e;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+/* --------- */
+/* BreadCumb */
+/* --------- */
+main .breadcrumb{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+main .breadcrumb li a:visited{
+  color: #6666ff;
+}
+
+
+/* ------------ */
+/* Estilos main */
+/* ------------ */
+main{
+    min-height: 76.5vh;
+    padding: 30px 15%;
+    text-align: justify;
+    color: #212529;
+}
+
+main h1{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+main h2{
+  margin-top: 30px;
+  scroll-margin-top: 100px;
+}
+
+main img.centrada{
+  width: 823px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+main video{
+  width: 823px;
+  display: block;
+  margin: 30px auto;
+}
+
+/* Imagen con notas */
+main div.imagen{
+  position: relative;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main div.imagen img{
+  width: 600px;
+}
+
+main div.imagen:hover ul.cuadro li{
+  display: block;
+}
+
+main div.imagen ul.cuadro li{
+  list-style: none;
+  display: none;
+  position: absolute;
+  border: medium solid #7a7a7a;
+  opacity: 0.50;
+  border-radius: 10px;
+}
+
+main div.imagen ul.cuadro li p{
+  margin: 10px 0 0 0;
+  padding: 0.3em;
+  display: none;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 100%;
+}
+
+main div.imagen ul.cuadro li:hover p{
+  display: block;
+}
+
+/* Todas las notas se alinean segun su posicion */
+main div.imagen ul.cuadro li.txt1{
+  top: 75px;
+  left: 50px;
+  width: 205px;
+  height: 30px;
+}
+
+main div.imagen ul.cuadro li.txt2{
+  top: 5px;
+  left: 375px;
+  width: 150px;
+  height: 140px;
+}
+
+main div.imagen ul.cuadro li.txt3{
+  top: 210px;
+  left: 60px;
+  width: 185px;
+  height: 125px;
+}
+
+main div.imagen ul.cuadro li.txt4{
+  top: 225px;
+  left: 360px;
+  width: 185px;
+  height: 85px;
+}
+
+main .map{
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* -------------- */
+/* Sobre nosotros */
+/* -------------- */
+
+/* Cambios de ingles a español */
+main .ing{
+  display: none;
+}
+
+main .Idioma:checked ~ .esp{
+  display: none;
+}
+
+main .Idioma:checked ~ .ing{
+  display: block;
+}
+
+main input.Idioma, label{
+  float: right;
+}
+
+main #imagenRecorte{
+  width: 1000px; height: 750px;
+  background-image: url(../images/SobreNosotros.jpeg);
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+main #imagenRecorte div{
+  position: absolute;
+}
+
+
+/* Si, el recorte es del cuerpo entero, pero no se como nos pusimos todos */
+/* de acuerdo para ir vestidos de blanco y negro */
+main #imagenRecorte #diego { width: 294px; height: 697px; top: 21px; left: 191.5px }
+main #imagenRecorte #diego:hover { background: url(../images/SobreNosotrosRecortes.png) -47px -21px }
+
+main #imagenRecorte #carlos { width: 234px; height: 649px; top: 33px; left: 400.5px }
+main #imagenRecorte #carlos:hover { background: url(../images/SobreNosotrosRecortes.png) -400px -33px }
+
+main #imagenRecorte #saul { width: 234px; height: 649px; top: 33px; left: 590px }
+main #imagenRecorte #saul:hover { background: url(../images/SobreNosotrosRecortes.png) -717px -33px }
+
+/* Muestreo de informacion */
+main .separador{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 0;
+  gap: 30px;
+}
+
+main div{
+  margin-bottom: 30px;
+}
+
+main .separador div img{
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ---------- */
+/* Temporadas */
+/* ---------- */
+main .temporadas{
+  display: grid;
+  /* Esta funcionalidad distribuye los divs de las temporadas en el ancho de la pantalla */
+  /* Segun el espacio que tenga disponible */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 20px;
+}
+
+main .temporadas .temporada{
+  width: 250px;
+}
+
+main .temporadas .temporada img{
+  width: 250px;
+  border-radius: 10px;
+}
+
+main .temporadas .temporada p{
+  text-align: center;
+  color: #9b9d9e;
+  margin-bottom: 40px;
+  transition: 0.4s;
+}
+
+main .temporadas .temporada a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #9b9d9e;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+main .temporadas .temporada:hover p{
+  color: #212529;
+  transition: 0.4s;
+}
+
+main .temporadas .temporada:hover a{
+  background-color: #212529;
+  transition: 0.4s;
+}
+
+/* Pseudoselector que hace que cuando se clicke en el boton aparezca el texto en rojo */
+main .temporadas .temporada a:active{
+  color: #EE0000;
+}
+
+main .temporadas .temporada.no-disponible a{
+  background-color: white;
+  color: #9b9d9e;
+  cursor: not-allowed;
+}
+
+main .titulo-sprite{
+  display: flex;
+  gap: 33px;
+}
+
+main audio{
+  width: 100%;
+}
+
+/* Estilos footer */
+footer{
+    position: relative;
+    height: 88px;
+    width: 100%;
+    background-color: #212529;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+footer div.info{
+    margin-left: 10%;
+}
+
+footer div.copyright{
+    margin-right: 3%;
+}
+
+footer div.copyright a{
+    color: #9b9d9e;
+}
+
+
+
+/* Media */
+@media (max-width: 1200px){
+  /* imagenes y videos ajuste tamaño */
+  main img.centrada{
+    width: 100%;
+  }
+
+  main video{
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  /* Imagen del header */
+    header img{
+      width: 30px;
+    }
+  /* Menu hamburger css */
+    nav{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-button-container{
+      display: flex;
+    }
+
+    /* Posicion desplegable del menu */
+    .lista {
+      position: absolute;
+      top: 68px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #menu-toggle ~ .lista li{
+      height: 0;
+      margin: 0;
+      padding: 0;
+      padding-left: 65px;
+      border: 0;
+      transition: 0.4s;
+    }
+
+    #menu-toggle:checked ~ .lista li{
+      height: 2.5em;
+      padding: 0.05em;
+      padding-left: 65px;
+      transition: 0.4s;
+    }
+
+    .lista > li {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      color: #9b9d9e;
+      background-color: #212529;
+    }
+
+    main .separador{
+      display: block;
+      width: 100%;
+    }
+
+    main .separador div img{
+      width: 100%;
+    }
+
+    /* Eliminamos el breadcrumb en dispositivos moviles */
+    main .breadcrumb{
+      display: none;
+    }
+
+    /* En mozilla no pasa pero en otros navegadores los mapas de imagenes y imagenes absolutas */
+    /* rompen la vista de movil, para asegurarnos que no pasa eso, en la vista de moviles */
+    /* Eliminamos  */
+    main .map{
+      display: none;
+    }
+
+    main div.imagen{
+      display: none;
+    }
+
+    main #imagenRecorte{
+      display: none;
+    }
+
+    /* Vista de movil para que el sprite no desaparezca */
+    main .titulo-sprite{
+      display: block;
+
+    }
+  }
+
+/* -------------- */
+/* Estilos Sprite */
+/* -------------- */
+
+.sprite{
+  width: 180px;
+  height: 56px;
+  background-image: url(../images/spritesheet.png);
+  animation: coche 1.5s steps(16, end) infinite;
+}
+
+
+@keyframes coche {
+  from { background-position: 0px ; }
+  to { background-position: -2880px; }
+}
+
+
